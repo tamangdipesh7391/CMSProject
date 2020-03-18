@@ -17,7 +17,7 @@ function base_url($path=''){
 		$path=trim($path,'/');
 		$http=$_SERVER['REQUEST_SCHEME'];
 		$serverName=$_SERVER['SERVER_NAME'];
-		return $http.'://'.$serverName.'/FreePaid/'.$path;
+		return $http.'://'.$serverName.'/FreePaid/admin-pannel/'.$path;
 	}
 
 }

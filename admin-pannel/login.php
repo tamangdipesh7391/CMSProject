@@ -6,7 +6,7 @@ require_once ("config/db.php");
      if(!empty($_POST) && $_POST['submit']=='submit'){
         $username=$_POST['username'];
         $password=md5($_POST['password']);
-        $user_select=$obj->Query("SELECT * FROM z_db_users WHERE user_username='$username' and password='$password'");
+        $user_select=$obj->Query("SELECT * FROM admin_pannel WHERE username='$username' and password='$password'");
 
       if($user_select){
        $user_select= $user_select[0];

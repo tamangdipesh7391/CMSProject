@@ -10,24 +10,24 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?=base_url('assets/img/fpicon.png')?>" rel="icon">
+  <link href="<?=base_url('assets/img/apple-touch-icon.png')?>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/bootstrap/css/bootstrap.min')?>" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/ionicons/css/ionicons.min')?>" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/animate.css/animate.min')?>" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/font-awesome/css/font-awesome.min')?>" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/venobox/venobox')?>" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/owl.carousel/assets/owl.carousel.min')?>" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+  <link href="<?=base_url('assets/css/style')?>" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="<?=base_url('assets/css/stylesheet.css')?>">
   <!-- =======================================================
   * Template Name: Reveal - v2.0.0
   * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
@@ -60,27 +60,28 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="<?=base_url()?>" class="scrollto">Free<span>Paid</span></a></h1>
+        <h1><img src="<?=base_url('assets/img/fplogo.png')?>" /><a href="<?=base_url()?>" class="scrollto">Free<span>Paid</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#topbar"><img src="assets/img/logo.png" alt=""></a>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#topbar">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <li class="menu-active"><a href="#">Home</a></li>
+          
+          <li><a href="#">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li> -->
+         <!--  <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          </li> -->
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

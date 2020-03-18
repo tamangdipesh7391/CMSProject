@@ -17,7 +17,9 @@ $row = $result[0]['id'];
     <section id="services">
       <div class="container">
         <div class="section-header">
+          <hr>
           <h2>Free Products</h2>
+          <hr>
          <p>These all products are free of cost. Anyone can take this product if they are interested</p>
         </div>
 
@@ -26,7 +28,9 @@ $row = $result[0]['id'];
           <?php for($i=1;$i<=$row;$i++) { 
               
             $check = $obj->Query("SELECT * FROM free_product WHERE id =".$i);
-            if($check) {
+            $post_img = $obj->Select("free_product","*","id",array($i));
+
+            if($check && $post_img[0]['post_img']!=NULL) {
 
               $content = $obj->Select("free_product","*","id",array($i));
               $free_product_post_heading = $content[0]['post_heading'];
@@ -79,7 +83,9 @@ $row = $result[0]['id'];
       <section id="services">
       <div class="container">
         <div class="section-header">
+          <hr>
           <h2>Premium Products</h2>
+          <hr>
          <p>These all products are Premium. You must pay some amount to buy this stuffs.</p>
         </div>
 
@@ -88,7 +94,9 @@ $row = $result[0]['id'];
           <?php for($i=1;$i<=$row;$i++) { 
               
             $check = $obj->Query("SELECT post_img FROM premium_product WHERE id =".$i);
-            if($check) {
+             $post_img_premium = $obj->Select("premium_product","*","id",array($i));
+          
+            if($check && $post_img_premium[0]['post_img']!=NULL) {
 
               $content_premium = $obj->Select("premium_product","*","id",array($i));
               $premium_product_post_heading = $content_premium[0]['post_heading'];
@@ -112,7 +120,7 @@ $row = $result[0]['id'];
                   <img src="<?=base_url()."assets/post-img-pre/".$premium_product_thumbnail ?>">
                 </div>
                 <div class="price">
-                    <h3>Rs <?=$price?><span><a href=""><button class="btn btn-info">Take</button></a></span></h3>
+                    <h3>Rs <?=$price?><span><a href=""><button class="btn btn-info">Buy</button></a></span></h3>
                 </div>
                 <div class="offered-price">
                   

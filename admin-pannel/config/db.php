@@ -11,7 +11,7 @@ class Database
 
     private function Connection()
     {
-        $this->_connection = new PDO('mysql:host=127.0.0.1;dbname=judicialcouncil', 'root', '');
+        $this->_connection = new PDO('mysql:host=127.0.0.1;dbname=freepaid', 'root', '');
         $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 

@@ -2,7 +2,7 @@
 <?php
 session_start();
 
-if ($_SESSION['status']!=="Success") {
+if ($_SESSION['status']!="Success") {
 	header("Location:login.php");
 }
 require_once ("config/config.php");

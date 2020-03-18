@@ -1213,10 +1213,13 @@ section {
 
 @media (max-width: 991px) {
     .header-desktop {
-        position: relative;
+        /*position: relative;
         top: 0;
         left: 0;
-        height: 170px;
+        height: 70px;
+        */
+        display: none;
+        margin-right: -20px;
     }
 }
 
@@ -1691,7 +1694,7 @@ section {
     padding: 0;
     line-height: 1;
     vertical-align: top;
-    background: #fff;
+    background: #000;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1723,8 +1726,8 @@ section {
 }
 
 .header-mobile .hamburger .hamburger-box .hamburger-inner:before {
-    width: 20px;
-    height: 2px;
+    width: 22px;
+    height: 3px;
     top: 6px;
 }
 
@@ -1826,7 +1829,7 @@ section {
 }
 
 .header-mobile-2.header-mobile .hamburger .hamburger-box .hamburger-inner::after {
-    background: #fff;
+    background: #000;
 }
 
 .sub-header-mobile-2 {

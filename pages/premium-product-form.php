@@ -47,7 +47,7 @@
 			</div>
 			<div class="form-group">
 				<label>Estimated Amount</label>
-				<input type="number" name="price" class="form-control">
+				<input type="number" name="price" class="form-control" placeholder="Inset in Rs.">
 			</div>
 			<div class="form-group">
 				<label>Date</label>

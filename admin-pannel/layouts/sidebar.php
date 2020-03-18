@@ -1,7 +1,12 @@
-        <!-- MENU SIDEBAR-->
+<!-- <header class="header-desktop desktop-view">
+      <a href="<?=base_url('logout.php');?>" style="float: right;margin-top: 10px;
+    margin-right: 12px;"> <button class="btn btn-warning btn-lg" >Logout</button></a>
+    </header> -->
+
+            <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-               <h3>Judicial Transfer</h3>
+               <h3>Free <span>Paid</span></h3>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
@@ -33,3 +38,10 @@
             </div>
         </aside>
         <!-- END MENU SIDEBAR-->
+
+         <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+               
+            </header>
+        </div>
